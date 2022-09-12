@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visit Nepal 2020</title>
+	<link rel="stylesheet" type="text/css" href="css/Feedback.css">
+	<style type="text/css">
+		fieldset{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+<header>
+	<div class="logo">
+			<img src="Photos/logo.jpg">
+		</div>
+	<div class="main">
+		<div class="a">
+			<a href="Home.html">Home</a>
+		</div>
+		<div class="b">
+			<a href="Events.html">Events</a>
+		</div>
+		<div class="c">
+			<a href="Festivals.html">Festivals</a>
+		</div>
+		<div class="d">
+			<a href="Places.html">Places</a>
+		</div>
+		<div class="e">
+			<a href="Videos.html">Videos</a>
+		</div>
+		<div class="f">
+			<a href="Feedback.html">Feedback</a>
+		</div>
+	</div>
+</header>
+<form name="frm">
+		<table border="1">
+			<tr> 
+				<td>First Name:</td>
+				<td><input type="text" name="name" </td>
+			</tr>	
+			<tr>
+				<td>Last  Name:</td>
+				<td><input type="text" name="last" </td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="Gender">Male</br>
+					<input type="radio" name="Gender">Female</br>
+					<input type="radio" name="Gender">Others
+				</td>
+			</tr>
+			<tr>
+				<td>Country name</td>	
+				<td><input type="text" name="text"</td>
+			</tr>
+			<tr> 
+				<td>Feedback</td>
+				<td><textarea rows="5" cols="50"></textarea></td>
+			</tr>
+				
+			<tr> 
+				<td>Share your experiences</td>
+				<td>
+					<form enctype="multipart/form1.data">
+						<input type="file" name="fileupload" accept="image/*">
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<button type="submit" name="submit" onclick="valid()">Submit</button>
+					<button type="reset" name="reset">Reset</button>
+				</td>
+			</tr>
+		</table>
+	</form>	
+</body>
+</html>
+</form>
+	<script type="text/javascript">
+		function valid(){
+			first=document.frm.name.value;
+			second=document.frm.last.value;
+			email=document.frm.email.value;
+
+			if(first=="")
+			{
+				alert("please enter your first name...");
+				return false;
+			}
+			if(second=="")
+			{
+				alert("please enter your last name..");
+				return false;
+			}
+			if(email=="")
+			{
+				alert("please enter your email..");
+				return false;
+			}
+			alert("your message has been send.. we will respond to it as soon as possible");
+
+		}
+	</script>
+</body>
+</html>

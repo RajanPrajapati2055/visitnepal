@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visit Nepal 2020</title>
+	<link rel="stylesheet" type="text/css" href="css/Events.css">
+</head>
+<body>
+<header>
+	<div class="logo">
+			<img src="Photos/logo.jpg">
+		</div>
+	<div class="main">
+		<div class="a">
+			<a href="Home.html">Home</a>
+		</div>
+		<div class="b">
+			<a href="Events.html">Events</a>
+		</div>
+		<div class="c">
+			<a href="Festivals.html">Festivals</a>
+		</div>
+		<div class="d">
+			<a href="Places.html">Places</a>
+		</div>
+		<div class="e">
+			<a href="Videos.html">Videos</a>
+		</div>
+		<div class="f">
+			<a href="Feedback.html">Feedback</a>
+		</div>
+	</div>
+</header>
+<div class="first">
+<img name="slide" width="70%" height="300px">
+<h1>Ongoing Events</h1>
+<script type="text/javascript">
+	var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 2000;	// Time Between Switch
+	 
+// Image List
+images[0] = "Photos/3.jpg";
+images[1] = "Photos/4.jpeg";
+images[2] = "Photos/3.jpg";
+images[3] = "Photos/2.jpg";
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+</script>
+<hr>
+<p class="Upcoming">Upcoming Events</p>
+<div class="Second">
+	<div><img src="Photos/21.jpg" height="300px" width="300px">
+		<p>It is one of the popular tattoo competition of Nepal being held on 31st Nov</p></div>
+</div>
+<div class="Second">
+	<div><img src="Photos/22.jpg" height="300px" width="300px">
+		<p>Everest Marathon</p></div>
+	<div><img src="Photos/23.jpg" height="300px" width="300px">
+		<p>Annapurna Trek</p></div>
+
+	<div><img src="Photos/24.jpg" height="300px" width="300px">
+		<p>Nepal Skate</p>
+	</div>
+
+	<div><img src="Photos/25.jpg" height="300px" width="300px"> <p>Can Infotech</p></div>
+
+
+	<div><img src="Photos/26.jpg" height="300px" width="300px">
+		<p>Khokana Tourism Festival</p></div>
+
+
+	<div><img src="Photos/27.jpg" height="300px" width="300px">
+		<p>Shivaratri</p></div>
+
+
+	<div><img src="Photos/28.jpg" height="300px" width="300px"> <p>Jatra</p></div>
+
+
+	<div><img src="Photos/29.jpg" height="300px" width="300px"> <p>Bisket Jatra</p></div>
+
+
+	<div><img src="Photos/30.jpg" height="300px" width="300px"> <p>Pokhara Enduro</p></div>
+
+</div>
+</body>
+</html>

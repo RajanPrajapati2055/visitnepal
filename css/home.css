@@ -1,0 +1,75 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Century Gothic;
+}
+header {
+    height: 20vh;
+    position: fixed;
+    z-index: 1;
+    background: black;
+    width: 100%
+}
+ body{
+ 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Photos/11.jpg);
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ }
+.main{
+	border: 2px;
+	display: inline-block;
+	font-size: xx-large;
+	float: right;
+	margin-top: 45px;
+	max-width: 1200px;
+	margin-right: 45px;
+}
+div>div{
+	display: inline-block;
+}
+div>div>a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+div>div>a:hover{
+	background-color: #fff;
+	color: #000;
+}
+.a a{
+	/*background-color: #fff;*/
+	color: #f8ce1a;
+}
+.logo img{
+	float: left;
+	width: 150px;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	position: fixed;
+}
+/**
+div>div>img{
+	position: absolute;
+	left: 10px;
+	top: 200px;
+*/.first{
+	position: absolute;
+	left: 200px;
+	top: 200px;
+	text-decoration-color: white;
+	color: white;
+	width: 1000px;
+
+}
+h1{
+	text-align: center;
+}
+p{
+	margin-top: 20px;
+	text-align: justify;
+	font-size: large;
+	font-family: "Times New Rowman";
+}
